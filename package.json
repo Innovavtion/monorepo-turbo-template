@@ -1,0 +1,24 @@
+{
+  "name": "monorepo-turbo-template",
+  "version": "0.0.1",
+  "author": "Nikita",
+  "license": "ISC",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --turbo",
+    "deploy": "turbo run deploy",
+    "build": "trubo run build --turbo",
+    "test": "turbo run test",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "turbo": "^1.13.2",
+    "typescript": "^5.4.3"
+  }
+}
